@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BACF43DE-BD31-46EF-B9DC-762936B32BF6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BusinessArea</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6A3278DB-57C1-4CD0-89A5-75ED91B0E09D</key>
+		<string>https://github.com/iss-ios/BigBusinessArea.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BusinessArea/BusinessArea.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6A3278DB-57C1-4CD0-89A5-75ED91B0E09D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/iss-ios/BigBusinessArea.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6A3278DB-57C1-4CD0-89A5-75ED91B0E09D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6A3278DB-57C1-4CD0-89A5-75ED91B0E09D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BigBusinessArea</string>
+		</dict>
+	</array>
+</dict>
+</plist>
