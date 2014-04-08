@@ -52,6 +52,11 @@
     
     [self.view addGestureRecognizer:recognizer_left];
     [self.view addGestureRecognizer:recognizer_right];
+    
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background_image.png"]]];
+    [title_view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background_image.png"]]];
+    
+    [self initializeButtonListView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,9 +67,34 @@
 
 -(void)initializeButtonListView
 {
-    for (int i = 0; i < 23; i++)
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Synthesize" ofType:@"plist"];
+    NSMutableArray *buttonList = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+    
+    int x = 0;
+    int y = 0;
+    
+    for (int i = 0; i < [buttonList count]; i++)
     {
+        NSString *key = [[[buttonList objectAtIndex:i] allKeys] objectAtIndex:0];
+        NSString *value = [[buttonList objectAtIndex:i] valueForKey:key];
+        UIButton *button = [[UIButton alloc] init];
         
+        if (i % 4 == 0)
+        {
+            x = 0;
+            y++;
+        }
+        
+        [synthesizeScrollView addSubview:button];
+        [button setTitle:key forState:UIControlStateNormal];
+        [button setFrame:CGRectMake(x * 80, y * 100, 80, 100)];
+        [button.titleLabel setFont:[UIFont systemFontOfSize: 13.0]];
+        [button setImage:[UIImage imageNamed:value] forState:UIControlStateNormal];
+        
+        [button setImageEdgeInsets:UIEdgeInsetsMake(5, 5, 25, 5)];
+        [button setTitleEdgeInsets:UIEdgeInsetsMake(80, -button.imageView.image.size.width, 0, 0)];
+        
+        x++;
     }
 }
 

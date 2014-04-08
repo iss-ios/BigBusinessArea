@@ -10,6 +10,9 @@
 
 @interface SynthesizeViewController : UIViewController
 {
+    IBOutlet UIView *title_view;
+    IBOutlet UIScrollView *synthesizeScrollView;
+    
     UISwipeGestureRecognizer *recognizer_left;
     UISwipeGestureRecognizer *recognizer_right;
 }

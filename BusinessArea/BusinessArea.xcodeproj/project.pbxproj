@@ -116,6 +116,8 @@
 		DE89FA5F18F3BB3600831A4A /* zonghe_icon_yiliaobaojian.png in Resources */ = {isa = PBXBuildFile; fileRef = DE89FA4318F3BB3600831A4A /* zonghe_icon_yiliaobaojian.png */; };
 		DE89FA6018F3BB3600831A4A /* zonghe_icon_yingshiwenhua.png in Resources */ = {isa = PBXBuildFile; fileRef = DE89FA4418F3BB3600831A4A /* zonghe_icon_yingshiwenhua.png */; };
 		DE89FA6118F3BB3600831A4A /* zonghe_icon_yinyueqicai.png in Resources */ = {isa = PBXBuildFile; fileRef = DE89FA4518F3BB3600831A4A /* zonghe_icon_yinyueqicai.png */; };
+		DEA5AC5518F3EAA80087DC22 /* background_image.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA5AC5418F3EAA80087DC22 /* background_image.png */; };
+		DEA5AC5718F3EC570087DC22 /* Synthesize.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEA5AC5618F3EC570087DC22 /* Synthesize.plist */; };
 		DEDA12D018EEAA1F00276906 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDA12CE18EEAA1F00276906 /* HomeTableViewCell.m */; };
 		DEDA12D118EEAA1F00276906 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDA12CF18EEAA1F00276906 /* HomeTableViewCell.xib */; };
 		DEDA12D418EEAE8B00276906 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDA12D318EEAE8B00276906 /* test.png */; };
@@ -313,6 +315,8 @@
 		DE89FA4318F3BB3600831A4A /* zonghe_icon_yiliaobaojian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zonghe_icon_yiliaobaojian.png; sourceTree = "<group>"; };
 		DE89FA4418F3BB3600831A4A /* zonghe_icon_yingshiwenhua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zonghe_icon_yingshiwenhua.png; sourceTree = "<group>"; };
 		DE89FA4518F3BB3600831A4A /* zonghe_icon_yinyueqicai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zonghe_icon_yinyueqicai.png; sourceTree = "<group>"; };
+		DEA5AC5418F3EAA80087DC22 /* background_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_image.png; sourceTree = "<group>"; };
+		DEA5AC5618F3EC570087DC22 /* Synthesize.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Synthesize.plist; sourceTree = "<group>"; };
 		DEDA12CD18EEAA1F00276906 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		DEDA12CE18EEAA1F00276906 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		DEDA12CF18EEAA1F00276906 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -414,6 +418,7 @@
 		0233D84718EB9EDB00D18A5C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DEA5AC5618F3EC570087DC22 /* Synthesize.plist */,
 				0233D84818EB9EDB00D18A5C /* BusinessArea-Info.plist */,
 				0233D84918EB9EDB00D18A5C /* InfoPlist.strings */,
 				0233D84C18EB9EDB00D18A5C /* main.m */,
@@ -755,6 +760,7 @@
 				DE89FA6218F3BB3C00831A4A /* Synthesize */,
 				DE89FA2618F3B21C00831A4A /* left_button.png */,
 				DE89FA2718F3B21C00831A4A /* right_button.png */,
+				DEA5AC5418F3EAA80087DC22 /* background_image.png */,
 				DEDA12D318EEAE8B00276906 /* test.png */,
 			);
 			path = Images;
@@ -840,6 +846,7 @@
 				0233D84B18EB9EDB00D18A5C /* InfoPlist.strings in Resources */,
 				DE89FA5818F3BB3600831A4A /* zonghe_icon_meifa.png in Resources */,
 				DE89FA2918F3B21C00831A4A /* right_button.png in Resources */,
+				DEA5AC5718F3EC570087DC22 /* Synthesize.plist in Resources */,
 				0233D8CA18EBA1A900D18A5C /* whiteArrow@2x.png in Resources */,
 				DE89FA5E18F3BB3600831A4A /* zonghe_icon_xiuxianyule.png in Resources */,
 				0233D91818EBEBF700D18A5C /* ForgetPasswordViewController.xib in Resources */,
@@ -856,6 +863,7 @@
 				0233D8C518EBA1A900D18A5C /* blueArrow.png in Resources */,
 				DE89FA5A18F3BB3600831A4A /* zonghe_icon_shumatongxin.png in Resources */,
 				DEDA131318F0673000276906 /* SynthesizeViewController.xib in Resources */,
+				DEA5AC5518F3EAA80087DC22 /* background_image.png in Resources */,
 				DE89FA5618F3BB3600831A4A /* zonghe_icon_luntan.png in Resources */,
 				DE89FA5418F3BB3600831A4A /* zonghe_icon_jiaoyupeixun.png in Resources */,
 				0233D8C418EBA1A900D18A5C /* blackArrow@2x.png in Resources */,
