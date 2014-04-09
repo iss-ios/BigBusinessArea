@@ -36,9 +36,12 @@
     // Do any additional setup after loading the view from its nib.
     
     [title_label setText:news_title];
-    [button_view setFrame:CGRectMake(0, title_view.frame.size.height, Screen_Width, button_view.frame.size.height)];
-    [news_scrollview setFrame:CGRectMake(0, button_view.frame.size.height + button_view.frame.origin.y, Screen_Width, Screen_Height - title_view.frame.size.height - button_view.frame.size.height)];
-    [news_scrollview setContentSize:CGSizeMake(Screen_Width * 5, news_scrollview.frame.size.height)];
+    
+    [radio_button setDelegate:self];
+    [radio_button setFrame:CGRectMake(0, title_view.frame.size.height, Screen_Width, radio_button.frame.size.height)];
+    
+    [news_scrollview setFrame:CGRectMake(0, radio_button.frame.size.height + radio_button.frame.origin.y, Screen_Width, Screen_Height - title_view.frame.size.height - radio_button.frame.size.height)];
+    [news_scrollview setContentSize:CGSizeMake(Screen_Width * 4, news_scrollview.frame.size.height)];
     [news_scrollview setPagingEnabled:YES];
     [news_scrollview setBounces:NO];
     
@@ -60,6 +63,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UIScrollView
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [radio_button setRadioButtonStatus:scrollView.contentOffset.x / scrollView.frame.size.width];
+}
+
+-(void)customRadioButtonPressed:(int)index
+{
+    [news_scrollview setContentOffset:CGPointMake(index * news_scrollview.frame.size.width, 0) animated:NO];
+}
+
 #pragma mark - ASIFormDataRequest
 
 -(void)loadNewsListData:(NSString *)typelistID childTypeID:(NSString *)childTypeID beginNum:(NSString *)beginNum endNum:(NSString *)endNum
@@ -78,6 +92,10 @@
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
+    NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"商业楼盘", @"住宅楼盘", @"楼盘团购", @"二手房源",  nil];
+    [radio_button setButtonWithArray:array];
+    [radio_button setRadioButtonStatus:0];
+    
     NSLog(@"responseString : %@",request.responseString);
     if ([[request.responseString JSONValue] isKindOfClass:[NSDictionary class]])
     {

@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomRadioButton.h"
 
-@interface NewsListViewController : UIViewController
+@interface NewsListViewController : UIViewController <CustomRadioButtonDelegate>
 {
     IBOutlet UIView *title_view;
-    IBOutlet UIView *button_view;
     IBOutlet UILabel *title_label;
     IBOutlet UIScrollView *news_scrollview;
+    IBOutlet CustomRadioButton *radio_button;
 }
 
 @property (nonatomic, copy) NSString *news_title;

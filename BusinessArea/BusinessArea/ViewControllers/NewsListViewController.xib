@@ -6,8 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsListViewController">
             <connections>
-                <outlet property="button_view" destination="e11-Ih-e0N" id="L8H-O8-fzf"/>
                 <outlet property="news_scrollview" destination="tfb-z7-dOO" id="Lvg-da-QGJ"/>
+                <outlet property="radio_button" destination="e11-Ih-e0N" id="xYP-62-7xt"/>
                 <outlet property="title_label" destination="7tq-5f-UaP" id="OeB-2W-Ixk"/>
                 <outlet property="title_view" destination="Be6-fF-R5c" id="c7I-Pf-L9Z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -47,7 +47,7 @@
                     </subviews>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e11-Ih-e0N">
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e11-Ih-e0N" customClass="CustomRadioButton">
                     <rect key="frame" x="0.0" y="44" width="320" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,6 +56,9 @@
                     <rect key="frame" x="0.0" y="84" width="320" height="484"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fpm-qM-IpT"/>
+                    </connections>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

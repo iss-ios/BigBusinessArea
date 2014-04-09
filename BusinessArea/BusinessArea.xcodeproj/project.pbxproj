@@ -143,6 +143,12 @@
 		DEC5C26518F52BD7008193FD /* NewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC5C26318F52BD7008193FD /* NewsListViewController.m */; };
 		DEC5C26618F52BD7008193FD /* NewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C26418F52BD7008193FD /* NewsListViewController.xib */; };
 		DEC5C26918F54A83008193FD /* CustomRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC5C26818F54A83008193FD /* CustomRadioButton.m */; };
+		DEC5C26B18F54F4E008193FD /* radio_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C26A18F54F4E008193FD /* radio_button.png */; };
+		DEC5C26E18F5547E008193FD /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC5C26D18F5547E008193FD /* CustomWindow.m */; };
+		DEC5C27218F5549D008193FD /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC5C27018F5549D008193FD /* UserInfoViewController.m */; };
+		DEC5C27318F5549D008193FD /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C27118F5549D008193FD /* UserInfoViewController.xib */; };
+		DEC5C27618F554D7008193FD /* MenuViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC5C27518F554D7008193FD /* MenuViewGenerator.m */; };
+		DEC5C27918F55500008193FD /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC5C27818F55500008193FD /* MenuButton.m */; };
 		DEDA12D018EEAA1F00276906 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDA12CE18EEAA1F00276906 /* HomeTableViewCell.m */; };
 		DEDA12D118EEAA1F00276906 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDA12CF18EEAA1F00276906 /* HomeTableViewCell.xib */; };
 		DEDA12D418EEAE8B00276906 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDA12D318EEAE8B00276906 /* test.png */; };
@@ -369,6 +375,16 @@
 		DEC5C26418F52BD7008193FD /* NewsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsListViewController.xib; sourceTree = "<group>"; };
 		DEC5C26718F54A83008193FD /* CustomRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRadioButton.h; sourceTree = "<group>"; };
 		DEC5C26818F54A83008193FD /* CustomRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRadioButton.m; sourceTree = "<group>"; };
+		DEC5C26A18F54F4E008193FD /* radio_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_button.png; sourceTree = "<group>"; };
+		DEC5C26C18F5547E008193FD /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
+		DEC5C26D18F5547E008193FD /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
+		DEC5C26F18F5549D008193FD /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		DEC5C27018F5549D008193FD /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		DEC5C27118F5549D008193FD /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
+		DEC5C27418F554D7008193FD /* MenuViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewGenerator.h; sourceTree = "<group>"; };
+		DEC5C27518F554D7008193FD /* MenuViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewGenerator.m; sourceTree = "<group>"; };
+		DEC5C27718F55500008193FD /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
+		DEC5C27818F55500008193FD /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		DEDA12CD18EEAA1F00276906 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		DEDA12CE18EEAA1F00276906 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		DEDA12CF18EEAA1F00276906 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -779,6 +795,8 @@
 				02C7043918F3C0E70063CC7B /* TextFieldInputCheck.m */,
 				DEC5C26718F54A83008193FD /* CustomRadioButton.h */,
 				DEC5C26818F54A83008193FD /* CustomRadioButton.m */,
+				DEC5C26C18F5547E008193FD /* CustomWindow.h */,
+				DEC5C26D18F5547E008193FD /* CustomWindow.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -786,6 +804,10 @@
 		DEDA12C718EE9A1300276906 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				DEC5C27718F55500008193FD /* MenuButton.h */,
+				DEC5C27818F55500008193FD /* MenuButton.m */,
+				DEC5C27418F554D7008193FD /* MenuViewGenerator.h */,
+				DEC5C27518F554D7008193FD /* MenuViewGenerator.m */,
 				0233D8E318EBA2E800D18A5C /* MenuViewController.h */,
 				0233D8E418EBA2E800D18A5C /* MenuViewController.m */,
 				0233D8E518EBA2E800D18A5C /* MenuViewController.xib */,
@@ -826,6 +848,9 @@
 		DEDA12CB18EE9A9000276906 /* Member */ = {
 			isa = PBXGroup;
 			children = (
+				DEC5C26F18F5549D008193FD /* UserInfoViewController.h */,
+				DEC5C27018F5549D008193FD /* UserInfoViewController.m */,
+				DEC5C27118F5549D008193FD /* UserInfoViewController.xib */,
 			);
 			name = Member;
 			sourceTree = "<group>";
@@ -844,6 +869,7 @@
 				DEC5C23718F4F196008193FD /* Decoration */,
 				DE89FA2618F3B21C00831A4A /* left_button.png */,
 				DE89FA2718F3B21C00831A4A /* right_button.png */,
+				DEC5C26A18F54F4E008193FD /* radio_button.png */,
 				DEC5C25C18F51247008193FD /* title_left_button.png */,
 				DEC5C25E18F513FD008193FD /* title_right_button.png */,
 				DEC5C26018F528E1008193FD /* title_background.png */,
@@ -937,6 +963,7 @@
 				DE89FA2918F3B21C00831A4A /* right_button.png in Resources */,
 				DEC5C25518F4F1AF008193FD /* jiazhuang_icon_yangbanjian.png in Resources */,
 				DEC5C24E18F4F1AF008193FD /* jiazhuang_icon_diban.png in Resources */,
+				DEC5C27318F5549D008193FD /* UserInfoViewController.xib in Resources */,
 				DEA5AC5718F3EC570087DC22 /* Synthesize.plist in Resources */,
 				0233D8CA18EBA1A900D18A5C /* whiteArrow@2x.png in Resources */,
 				DE89FA5E18F3BB3600831A4A /* zonghe_icon_xiuxianyule.png in Resources */,
@@ -966,6 +993,7 @@
 				DE89FA5418F3BB3600831A4A /* zonghe_icon_jiaoyupeixun.png in Resources */,
 				0233D8C418EBA1A900D18A5C /* blackArrow@2x.png in Resources */,
 				0233D8E718EBA2E800D18A5C /* MenuViewController.xib in Resources */,
+				DEC5C26B18F54F4E008193FD /* radio_button.png in Resources */,
 				DE89FA5918F3BB3600831A4A /* zonghe_icon_meijiu.png in Resources */,
 				DE89FA2818F3B21C00831A4A /* left_button.png in Resources */,
 				DEC5C25D18F51247008193FD /* title_left_button.png in Resources */,
@@ -1027,8 +1055,10 @@
 				02C7045A18F3C24E0063CC7B /* SBJsonStreamParserAdapter.m in Sources */,
 				0233D8DC18EBA1A900D18A5C /* Toast+UIView.m in Sources */,
 				0233D8BE18EBA1A900D18A5C /* ASIFormDataRequest.m in Sources */,
+				DEC5C27618F554D7008193FD /* MenuViewGenerator.m in Sources */,
 				0233D8D918EBA1A900D18A5C /* UIImage+WebP.m in Sources */,
 				02C7045718F3C24E0063CC7B /* SBJsonParser.m in Sources */,
+				DEC5C27918F55500008193FD /* MenuButton.m in Sources */,
 				DEDA131618F07CDA00276906 /* SWRevealViewController.m in Sources */,
 				0233D8BF18EBA1A900D18A5C /* ASIHTTPRequest.m in Sources */,
 				0233D91E18EBF56A00D18A5C /* CustomNavigationBar.m in Sources */,
@@ -1048,6 +1078,7 @@
 				DEDA12E018F01F3700276906 /* NewsDetailViewController.m in Sources */,
 				0233D8D318EBA1A900D18A5C /* SDWebImageDownloaderOperation.m in Sources */,
 				0233D8C118EBA1A900D18A5C /* ASINetworkQueue.m in Sources */,
+				DEC5C27218F5549D008193FD /* UserInfoViewController.m in Sources */,
 				0233D8CF18EBA1A900D18A5C /* SDImageCache.m in Sources */,
 				0233D8BD18EBA1A900D18A5C /* ASIDownloadCache.m in Sources */,
 				0233D8C018EBA1A900D18A5C /* ASIInputStream.m in Sources */,
@@ -1064,6 +1095,7 @@
 				0233D91718EBEBF700D18A5C /* ForgetPasswordViewController.m in Sources */,
 				0233D8E618EBA2E800D18A5C /* MenuViewController.m in Sources */,
 				0233D8D218EBA1A900D18A5C /* SDWebImageDownloader.m in Sources */,
+				DEC5C26E18F5547E008193FD /* CustomWindow.m in Sources */,
 				0233D8CD18EBA1A900D18A5C /* MKAnnotationView+WebCache.m in Sources */,
 				DEDA12D018EEAA1F00276906 /* HomeTableViewCell.m in Sources */,
 				DEDA131218F0673000276906 /* SynthesizeViewController.m in Sources */,
