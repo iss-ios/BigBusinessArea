@@ -140,6 +140,9 @@
 		DEC5C25D18F51247008193FD /* title_left_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C25C18F51247008193FD /* title_left_button.png */; };
 		DEC5C25F18F513FD008193FD /* title_right_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C25E18F513FD008193FD /* title_right_button.png */; };
 		DEC5C26118F528E1008193FD /* title_background.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C26018F528E1008193FD /* title_background.png */; };
+		DEC5C26518F52BD7008193FD /* NewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC5C26318F52BD7008193FD /* NewsListViewController.m */; };
+		DEC5C26618F52BD7008193FD /* NewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C26418F52BD7008193FD /* NewsListViewController.xib */; };
+		DEC5C26918F54A83008193FD /* CustomRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC5C26818F54A83008193FD /* CustomRadioButton.m */; };
 		DEDA12D018EEAA1F00276906 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDA12CE18EEAA1F00276906 /* HomeTableViewCell.m */; };
 		DEDA12D118EEAA1F00276906 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDA12CF18EEAA1F00276906 /* HomeTableViewCell.xib */; };
 		DEDA12D418EEAE8B00276906 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDA12D318EEAE8B00276906 /* test.png */; };
@@ -361,6 +364,11 @@
 		DEC5C25C18F51247008193FD /* title_left_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_left_button.png; sourceTree = "<group>"; };
 		DEC5C25E18F513FD008193FD /* title_right_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_right_button.png; sourceTree = "<group>"; };
 		DEC5C26018F528E1008193FD /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		DEC5C26218F52BD7008193FD /* NewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListViewController.h; sourceTree = "<group>"; };
+		DEC5C26318F52BD7008193FD /* NewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListViewController.m; sourceTree = "<group>"; };
+		DEC5C26418F52BD7008193FD /* NewsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsListViewController.xib; sourceTree = "<group>"; };
+		DEC5C26718F54A83008193FD /* CustomRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRadioButton.h; sourceTree = "<group>"; };
+		DEC5C26818F54A83008193FD /* CustomRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRadioButton.m; sourceTree = "<group>"; };
 		DEDA12CD18EEAA1F00276906 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		DEDA12CE18EEAA1F00276906 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		DEDA12CF18EEAA1F00276906 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -736,12 +744,15 @@
 				DEDA12EA18F02D5500276906 /* DecorationViewController.h */,
 				DEDA12EB18F02D5500276906 /* DecorationViewController.m */,
 				DEDA12EC18F02D5500276906 /* DecorationViewController.xib */,
-				DEDA12D818F01C9500276906 /* AdDetailViewController.h */,
-				DEDA12D918F01C9500276906 /* AdDetailViewController.m */,
-				DEDA12DA18F01C9500276906 /* AdDetailViewController.xib */,
+				DEC5C26218F52BD7008193FD /* NewsListViewController.h */,
+				DEC5C26318F52BD7008193FD /* NewsListViewController.m */,
+				DEC5C26418F52BD7008193FD /* NewsListViewController.xib */,
 				DEDA12DD18F01F3700276906 /* NewsDetailViewController.h */,
 				DEDA12DE18F01F3700276906 /* NewsDetailViewController.m */,
 				DEDA12DF18F01F3700276906 /* NewsDetailViewController.xib */,
+				DEDA12D818F01C9500276906 /* AdDetailViewController.h */,
+				DEDA12D918F01C9500276906 /* AdDetailViewController.m */,
+				DEDA12DA18F01C9500276906 /* AdDetailViewController.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -766,6 +777,8 @@
 				02C7043718F3C0E70063CC7B /* AdaptiveTextField.m */,
 				02C7043818F3C0E70063CC7B /* TextFieldInputCheck.h */,
 				02C7043918F3C0E70063CC7B /* TextFieldInputCheck.m */,
+				DEC5C26718F54A83008193FD /* CustomRadioButton.h */,
+				DEC5C26818F54A83008193FD /* CustomRadioButton.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -970,6 +983,7 @@
 				0233D8C718EBA1A900D18A5C /* grayArrow.png in Resources */,
 				DEC5C24A18F4F1AF008193FD /* jiazhuang_icon_chugui.png in Resources */,
 				DE89FA4C18F3BB3600831A4A /* zonghe_icon_fangchan.png in Resources */,
+				DEC5C26618F52BD7008193FD /* NewsListViewController.xib in Resources */,
 				DE89FA4818F3BB3600831A4A /* zonghe_icon_bianminfuwu.png in Resources */,
 				DEC5C25418F4F1AF008193FD /* jiazhuang_icon_weiyu.png in Resources */,
 				DEC5C25018F4F1AF008193FD /* jiazhuang_icon_jiafang.png in Resources */,
@@ -1058,6 +1072,7 @@
 				0233D8CC18EBA1A900D18A5C /* EGORefreshTableHeaderView.m in Sources */,
 				0233D8D518EBA1A900D18A5C /* SDWebImagePrefetcher.m in Sources */,
 				02C7043B18F3C0E70063CC7B /* TextFieldInputCheck.m in Sources */,
+				DEC5C26918F54A83008193FD /* CustomRadioButton.m in Sources */,
 				02C7045818F3C24E0063CC7B /* SBJsonStreamParser.m in Sources */,
 				0233D8D618EBA1A900D18A5C /* UIButton+WebCache.m in Sources */,
 				0233D8DA18EBA1A900D18A5C /* UIImageView+WebCache.m in Sources */,
@@ -1067,6 +1082,7 @@
 				0233D8D118EBA1A900D18A5C /* SDWebImageDecoder.m in Sources */,
 				02C7045C18F3C24E0063CC7B /* SBJsonStreamWriter.m in Sources */,
 				0233D8BC18EBA1A900D18A5C /* ASIDataDecompressor.m in Sources */,
+				DEC5C26518F52BD7008193FD /* NewsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

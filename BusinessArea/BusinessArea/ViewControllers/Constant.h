@@ -32,9 +32,10 @@
 #define POPUP_BOX_EDGE 10
 
 //接口
-#define Login_Url              @"http://www.chinavalues.net/appuser/login.aspx"
-#define Register_Url           @"http://www.chinavalues.net/appuser/register.aspx"
-#define Modify_Password_Url    @"http://www.chinavalues.net/appuser/updateuserpwd.aspx"
+#define Login_Url                   @"http://www.chinavalues.net/appuser/login.aspx"
+#define Register_Url                @"http://www.chinavalues.net/appuser/register.aspx"
+#define Modify_Password_Url         @"http://www.chinavalues.net/appuser/updateuserpwd.aspx"
+#define GetBusinessClassification   @"http://www.chinavalues.net/appuser/getBusinessClassification.aspx"
 
 //UIImageView完成异步加载图片
 #define FinishDownloadImage @"FinishDownloadImage"

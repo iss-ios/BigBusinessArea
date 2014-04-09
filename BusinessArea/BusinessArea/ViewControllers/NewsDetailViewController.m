@@ -38,7 +38,6 @@
     [title_label setText:news_title];
     [title_view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"title_background.png"]]];
     
-    [mWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.sina.com.cn/"]]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,7 +8,7 @@
 
 #import "SynthesizeViewController.h"
 #import "DecorationViewController.h"
-#import "NewsDetailViewController.h"
+#import "NewsListViewController.h"
 
 @interface SynthesizeViewController ()
 
@@ -113,7 +113,7 @@
 {
     if (buttonList.count != 0)
     {
-        NewsDetailViewController *next = [[NewsDetailViewController alloc] init];
+        NewsListViewController *next = [[NewsListViewController alloc] init];
         [next setNews_title:[[[buttonList objectAtIndex:button.tag] allKeys] objectAtIndex:0]];
         [self.navigationController pushViewController:next animated:YES];
     }

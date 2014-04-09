@@ -7,7 +7,7 @@
 //
 
 #import "DecorationViewController.h"
-#import "NewsDetailViewController.h"
+#import "NewsListViewController.h"
 
 @interface DecorationViewController ()
 
@@ -109,7 +109,7 @@
 {
     if (buttonList.count != 0)
     {
-        NewsDetailViewController *next = [[NewsDetailViewController alloc] init];
+        NewsListViewController *next = [[NewsListViewController alloc] init];
         [next setNews_title:[[[buttonList objectAtIndex:button.tag] allKeys] objectAtIndex:0]];
         [self.navigationController pushViewController:next animated:YES];
     }
