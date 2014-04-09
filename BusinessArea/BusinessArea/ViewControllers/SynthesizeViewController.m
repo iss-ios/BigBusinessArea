@@ -8,12 +8,18 @@
 
 #import "SynthesizeViewController.h"
 #import "DecorationViewController.h"
+#import "NewsDetailViewController.h"
 
 @interface SynthesizeViewController ()
 
 @end
 
 @implementation SynthesizeViewController
+
+-(IBAction)rightButtonPressed:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -75,27 +81,39 @@
     
     for (int i = 0; i < [buttonList count]; i++)
     {
-        NSString *key = [[[buttonList objectAtIndex:i] allKeys] objectAtIndex:0];
-        NSString *value = [[buttonList objectAtIndex:i] valueForKey:key];
-        UIButton *button = [[UIButton alloc] init];
-        
-        if (i % 4 == 0)
+        if (i % 4 == 0 && i != 0)
         {
             x = 0;
             y++;
         }
         
+        NSString *key = [[[buttonList objectAtIndex:i] allKeys] objectAtIndex:0];
+        NSString *value = [[buttonList objectAtIndex:i] valueForKey:key];
+        UIButton *button = [[UIButton alloc] init];
+        
         [synthesizeScrollView addSubview:button];
+        
+        [button setTag:i];
         [button setTitle:key forState:UIControlStateNormal];
         [button setFrame:CGRectMake(x * 80, y * 100, 80, 100)];
-        [button.titleLabel setFont:[UIFont systemFontOfSize: 13.0]];
         [button setImage:[UIImage imageNamed:value] forState:UIControlStateNormal];
-        
         [button setImageEdgeInsets:UIEdgeInsetsMake(5, 5, 25, 5)];
         [button setTitleEdgeInsets:UIEdgeInsetsMake(80, -button.imageView.image.size.width, 0, 0)];
+        [button.titleLabel setFont:[UIFont systemFontOfSize: 13.0]];
+        [button addTarget:self action:@selector(showNewsDetailPage:) forControlEvents:UIControlEventTouchUpInside];
         
         x++;
     }
+    
+    [synthesizeScrollView setContentSize:CGSizeMake(Screen_Width, (y + 1)* 100)];
+    [synthesizeScrollView setFrame:CGRectMake(0, title_view.frame.size.height, Screen_Width, Screen_Height - title_view.frame.size.height)];
+}
+
+-(void)showNewsDetailPage:(UIButton *)button
+{
+    NSLog(@"button tag : %d", button.tag);
+    NewsDetailViewController *next = [[NewsDetailViewController alloc] init];
+    [self.navigationController pushViewController:next animated:YES];
 }
 
 #pragma mark - 手势控制

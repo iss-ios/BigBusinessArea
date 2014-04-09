@@ -14,8 +14,7 @@
 
 @implementation NewsDetailViewController
 
-#pragma mark - Title
--(IBAction)titleButtonPressed:(id)sender
+-(IBAction)rightButtonPressed:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }

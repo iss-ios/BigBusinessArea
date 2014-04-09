@@ -118,6 +118,25 @@
 		DE89FA6118F3BB3600831A4A /* zonghe_icon_yinyueqicai.png in Resources */ = {isa = PBXBuildFile; fileRef = DE89FA4518F3BB3600831A4A /* zonghe_icon_yinyueqicai.png */; };
 		DEA5AC5518F3EAA80087DC22 /* background_image.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA5AC5418F3EAA80087DC22 /* background_image.png */; };
 		DEA5AC5718F3EC570087DC22 /* Synthesize.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEA5AC5618F3EC570087DC22 /* Synthesize.plist */; };
+		DEC5C23618F4EB9A008193FD /* Decoration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C23518F4EB9A008193FD /* Decoration.plist */; };
+		DEC5C24918F4F1AF008193FD /* jiazhuang_icon_chuanglianbuyi.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C23818F4F1AF008193FD /* jiazhuang_icon_chuanglianbuyi.png */; };
+		DEC5C24A18F4F1AF008193FD /* jiazhuang_icon_chugui.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C23918F4F1AF008193FD /* jiazhuang_icon_chugui.png */; };
+		DEC5C24B18F4F1AF008193FD /* jiazhuang_icon_cizhuan.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C23A18F4F1AF008193FD /* jiazhuang_icon_cizhuan.png */; };
+		DEC5C24C18F4F1AF008193FD /* jiazhuang_icon_dengshi.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C23B18F4F1AF008193FD /* jiazhuang_icon_dengshi.png */; };
+		DEC5C24D18F4F1AF008193FD /* jiazhuang_icon_diaoding.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C23C18F4F1AF008193FD /* jiazhuang_icon_diaoding.png */; };
+		DEC5C24E18F4F1AF008193FD /* jiazhuang_icon_diban.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C23D18F4F1AF008193FD /* jiazhuang_icon_diban.png */; };
+		DEC5C24F18F4F1AF008193FD /* jiazhuang_icon_jiadian.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C23E18F4F1AF008193FD /* jiazhuang_icon_jiadian.png */; };
+		DEC5C25018F4F1AF008193FD /* jiazhuang_icon_jiafang.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C23F18F4F1AF008193FD /* jiazhuang_icon_jiafang.png */; };
+		DEC5C25118F4F1AF008193FD /* jiazhuang_icon_jiaju.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C24018F4F1AF008193FD /* jiazhuang_icon_jiaju.png */; };
+		DEC5C25218F4F1AF008193FD /* jiazhuang_icon_mumen.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C24118F4F1AF008193FD /* jiazhuang_icon_mumen.png */; };
+		DEC5C25318F4F1AF008193FD /* jiazhuang_icon_shejishi.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C24218F4F1AF008193FD /* jiazhuang_icon_shejishi.png */; };
+		DEC5C25418F4F1AF008193FD /* jiazhuang_icon_weiyu.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C24318F4F1AF008193FD /* jiazhuang_icon_weiyu.png */; };
+		DEC5C25518F4F1AF008193FD /* jiazhuang_icon_yangbanjian.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C24418F4F1AF008193FD /* jiazhuang_icon_yangbanjian.png */; };
+		DEC5C25618F4F1AF008193FD /* jiazhuang_icon_yimen.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C24518F4F1AF008193FD /* jiazhuang_icon_yimen.png */; };
+		DEC5C25718F4F1AF008193FD /* jiazhuang_icon_zhuangshi.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C24618F4F1AF008193FD /* jiazhuang_icon_zhuangshi.png */; };
+		DEC5C25818F4F1AF008193FD /* jiazhuang_icon_zhuangshigongsi.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C24718F4F1AF008193FD /* jiazhuang_icon_zhuangshigongsi.png */; };
+		DEC5C25918F4F1AF008193FD /* jiazhuang_icon_zhuangxiuzhaobiao.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C24818F4F1AF008193FD /* jiazhuang_icon_zhuangxiuzhaobiao.png */; };
+		DEC5C25B18F4F1D5008193FD /* jiazhuang_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC5C25A18F4F1D5008193FD /* jiazhuang_ad.png */; };
 		DEDA12D018EEAA1F00276906 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDA12CE18EEAA1F00276906 /* HomeTableViewCell.m */; };
 		DEDA12D118EEAA1F00276906 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDA12CF18EEAA1F00276906 /* HomeTableViewCell.xib */; };
 		DEDA12D418EEAE8B00276906 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDA12D318EEAE8B00276906 /* test.png */; };
@@ -317,6 +336,25 @@
 		DE89FA4518F3BB3600831A4A /* zonghe_icon_yinyueqicai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zonghe_icon_yinyueqicai.png; sourceTree = "<group>"; };
 		DEA5AC5418F3EAA80087DC22 /* background_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_image.png; sourceTree = "<group>"; };
 		DEA5AC5618F3EC570087DC22 /* Synthesize.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Synthesize.plist; sourceTree = "<group>"; };
+		DEC5C23518F4EB9A008193FD /* Decoration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Decoration.plist; sourceTree = "<group>"; };
+		DEC5C23818F4F1AF008193FD /* jiazhuang_icon_chuanglianbuyi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_chuanglianbuyi.png; sourceTree = "<group>"; };
+		DEC5C23918F4F1AF008193FD /* jiazhuang_icon_chugui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_chugui.png; sourceTree = "<group>"; };
+		DEC5C23A18F4F1AF008193FD /* jiazhuang_icon_cizhuan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_cizhuan.png; sourceTree = "<group>"; };
+		DEC5C23B18F4F1AF008193FD /* jiazhuang_icon_dengshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_dengshi.png; sourceTree = "<group>"; };
+		DEC5C23C18F4F1AF008193FD /* jiazhuang_icon_diaoding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_diaoding.png; sourceTree = "<group>"; };
+		DEC5C23D18F4F1AF008193FD /* jiazhuang_icon_diban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_diban.png; sourceTree = "<group>"; };
+		DEC5C23E18F4F1AF008193FD /* jiazhuang_icon_jiadian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_jiadian.png; sourceTree = "<group>"; };
+		DEC5C23F18F4F1AF008193FD /* jiazhuang_icon_jiafang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_jiafang.png; sourceTree = "<group>"; };
+		DEC5C24018F4F1AF008193FD /* jiazhuang_icon_jiaju.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_jiaju.png; sourceTree = "<group>"; };
+		DEC5C24118F4F1AF008193FD /* jiazhuang_icon_mumen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_mumen.png; sourceTree = "<group>"; };
+		DEC5C24218F4F1AF008193FD /* jiazhuang_icon_shejishi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_shejishi.png; sourceTree = "<group>"; };
+		DEC5C24318F4F1AF008193FD /* jiazhuang_icon_weiyu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_weiyu.png; sourceTree = "<group>"; };
+		DEC5C24418F4F1AF008193FD /* jiazhuang_icon_yangbanjian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_yangbanjian.png; sourceTree = "<group>"; };
+		DEC5C24518F4F1AF008193FD /* jiazhuang_icon_yimen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_yimen.png; sourceTree = "<group>"; };
+		DEC5C24618F4F1AF008193FD /* jiazhuang_icon_zhuangshi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_zhuangshi.png; sourceTree = "<group>"; };
+		DEC5C24718F4F1AF008193FD /* jiazhuang_icon_zhuangshigongsi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_zhuangshigongsi.png; sourceTree = "<group>"; };
+		DEC5C24818F4F1AF008193FD /* jiazhuang_icon_zhuangxiuzhaobiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_icon_zhuangxiuzhaobiao.png; sourceTree = "<group>"; };
+		DEC5C25A18F4F1D5008193FD /* jiazhuang_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazhuang_ad.png; sourceTree = "<group>"; };
 		DEDA12CD18EEAA1F00276906 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		DEDA12CE18EEAA1F00276906 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		DEDA12CF18EEAA1F00276906 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -419,6 +457,7 @@
 			isa = PBXGroup;
 			children = (
 				DEA5AC5618F3EC570087DC22 /* Synthesize.plist */,
+				DEC5C23518F4EB9A008193FD /* Decoration.plist */,
 				0233D84818EB9EDB00D18A5C /* BusinessArea-Info.plist */,
 				0233D84918EB9EDB00D18A5C /* InfoPlist.strings */,
 				0233D84C18EB9EDB00D18A5C /* main.m */,
@@ -651,6 +690,31 @@
 			name = Synthesize;
 			sourceTree = "<group>";
 		};
+		DEC5C23718F4F196008193FD /* Decoration */ = {
+			isa = PBXGroup;
+			children = (
+				DEC5C25A18F4F1D5008193FD /* jiazhuang_ad.png */,
+				DEC5C23818F4F1AF008193FD /* jiazhuang_icon_chuanglianbuyi.png */,
+				DEC5C23918F4F1AF008193FD /* jiazhuang_icon_chugui.png */,
+				DEC5C23A18F4F1AF008193FD /* jiazhuang_icon_cizhuan.png */,
+				DEC5C23B18F4F1AF008193FD /* jiazhuang_icon_dengshi.png */,
+				DEC5C23C18F4F1AF008193FD /* jiazhuang_icon_diaoding.png */,
+				DEC5C23D18F4F1AF008193FD /* jiazhuang_icon_diban.png */,
+				DEC5C23E18F4F1AF008193FD /* jiazhuang_icon_jiadian.png */,
+				DEC5C23F18F4F1AF008193FD /* jiazhuang_icon_jiafang.png */,
+				DEC5C24018F4F1AF008193FD /* jiazhuang_icon_jiaju.png */,
+				DEC5C24118F4F1AF008193FD /* jiazhuang_icon_mumen.png */,
+				DEC5C24218F4F1AF008193FD /* jiazhuang_icon_shejishi.png */,
+				DEC5C24318F4F1AF008193FD /* jiazhuang_icon_weiyu.png */,
+				DEC5C24418F4F1AF008193FD /* jiazhuang_icon_yangbanjian.png */,
+				DEC5C24518F4F1AF008193FD /* jiazhuang_icon_yimen.png */,
+				DEC5C24618F4F1AF008193FD /* jiazhuang_icon_zhuangshi.png */,
+				DEC5C24718F4F1AF008193FD /* jiazhuang_icon_zhuangshigongsi.png */,
+				DEC5C24818F4F1AF008193FD /* jiazhuang_icon_zhuangxiuzhaobiao.png */,
+			);
+			name = Decoration;
+			sourceTree = "<group>";
+		};
 		DEDA12C518EE997200276906 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -758,6 +822,7 @@
 			isa = PBXGroup;
 			children = (
 				DE89FA6218F3BB3C00831A4A /* Synthesize */,
+				DEC5C23718F4F196008193FD /* Decoration */,
 				DE89FA2618F3B21C00831A4A /* left_button.png */,
 				DE89FA2718F3B21C00831A4A /* right_button.png */,
 				DEA5AC5418F3EAA80087DC22 /* background_image.png */,
@@ -841,11 +906,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC5C25318F4F1AF008193FD /* jiazhuang_icon_shejishi.png in Resources */,
 				DE89FA6118F3BB3600831A4A /* zonghe_icon_yinyueqicai.png in Resources */,
 				0233D8C618EBA1A900D18A5C /* blueArrow@2x.png in Resources */,
 				0233D84B18EB9EDB00D18A5C /* InfoPlist.strings in Resources */,
 				DE89FA5818F3BB3600831A4A /* zonghe_icon_meifa.png in Resources */,
+				DEC5C25618F4F1AF008193FD /* jiazhuang_icon_yimen.png in Resources */,
 				DE89FA2918F3B21C00831A4A /* right_button.png in Resources */,
+				DEC5C25518F4F1AF008193FD /* jiazhuang_icon_yangbanjian.png in Resources */,
+				DEC5C24E18F4F1AF008193FD /* jiazhuang_icon_diban.png in Resources */,
 				DEA5AC5718F3EC570087DC22 /* Synthesize.plist in Resources */,
 				0233D8CA18EBA1A900D18A5C /* whiteArrow@2x.png in Resources */,
 				DE89FA5E18F3BB3600831A4A /* zonghe_icon_xiuxianyule.png in Resources */,
@@ -859,8 +928,15 @@
 				0233D8C818EBA1A900D18A5C /* grayArrow@2x.png in Resources */,
 				DE89FA4B18F3BB3600831A4A /* zonghe_icon_canyin.png in Resources */,
 				DEDA12DC18F01C9500276906 /* AdDetailViewController.xib in Resources */,
+				DEC5C24B18F4F1AF008193FD /* jiazhuang_icon_cizhuan.png in Resources */,
 				DE89FA5D18F3BB3600831A4A /* zonghe_icon_wujinjidian.png in Resources */,
+				DEC5C25B18F4F1D5008193FD /* jiazhuang_ad.png in Resources */,
+				DEC5C25218F4F1AF008193FD /* jiazhuang_icon_mumen.png in Resources */,
+				DEC5C25818F4F1AF008193FD /* jiazhuang_icon_zhuangshigongsi.png in Resources */,
 				0233D8C518EBA1A900D18A5C /* blueArrow.png in Resources */,
+				DEC5C24C18F4F1AF008193FD /* jiazhuang_icon_dengshi.png in Resources */,
+				DEC5C24918F4F1AF008193FD /* jiazhuang_icon_chuanglianbuyi.png in Resources */,
+				DEC5C23618F4EB9A008193FD /* Decoration.plist in Resources */,
 				DE89FA5A18F3BB3600831A4A /* zonghe_icon_shumatongxin.png in Resources */,
 				DEDA131318F0673000276906 /* SynthesizeViewController.xib in Resources */,
 				DEA5AC5518F3EAA80087DC22 /* background_image.png in Resources */,
@@ -872,21 +948,29 @@
 				DE89FA2818F3B21C00831A4A /* left_button.png in Resources */,
 				DEDA12D418EEAE8B00276906 /* test.png in Resources */,
 				DEDA12EE18F02D5500276906 /* DecorationViewController.xib in Resources */,
+				DEC5C25718F4F1AF008193FD /* jiazhuang_icon_zhuangshi.png in Resources */,
 				DE89FA5518F3BB3600831A4A /* zonghe_icon_jiayongdianqi.png in Resources */,
 				DEDA12D118EEAA1F00276906 /* HomeTableViewCell.xib in Resources */,
 				0233D90E18EBEB8F00D18A5C /* RegisterViewController.xib in Resources */,
 				DE89FA4718F3BB3600831A4A /* zonghe_icon_baihuoshangchang.png in Resources */,
 				DE89FA5C18F3BB3600831A4A /* zonghe_icon_touzilicai.png in Resources */,
+				DEC5C25118F4F1AF008193FD /* jiazhuang_icon_jiaju.png in Resources */,
 				DE89FA5018F3BB3600831A4A /* zonghe_icon_goumai.png in Resources */,
 				DE89FA4618F3BB3600831A4A /* zonghe_icon_auto.png in Resources */,
 				0233D8C718EBA1A900D18A5C /* grayArrow.png in Resources */,
+				DEC5C24A18F4F1AF008193FD /* jiazhuang_icon_chugui.png in Resources */,
 				DE89FA4C18F3BB3600831A4A /* zonghe_icon_fangchan.png in Resources */,
 				DE89FA4818F3BB3600831A4A /* zonghe_icon_bianminfuwu.png in Resources */,
+				DEC5C25418F4F1AF008193FD /* jiazhuang_icon_weiyu.png in Resources */,
+				DEC5C25018F4F1AF008193FD /* jiazhuang_icon_jiafang.png in Resources */,
 				DE89FA5118F3BB3600831A4A /* zonghe_icon_huangjin.png in Resources */,
 				DE89FA4E18F3BB3600831A4A /* zonghe_icon_fushi.png in Resources */,
 				DE89FA4D18F3BB3600831A4A /* zonghe_icon_fangchanloushi.png in Resources */,
+				DEC5C24D18F4F1AF008193FD /* jiazhuang_icon_diaoding.png in Resources */,
 				DE89FA4A18F3BB3600831A4A /* zonghe_icon_bycicle.png in Resources */,
 				DE89FA5318F3BB3600831A4A /* zonghe_icon_jiafang.png in Resources */,
+				DEC5C24F18F4F1AF008193FD /* jiazhuang_icon_jiadian.png in Resources */,
+				DEC5C25918F4F1AF008193FD /* jiazhuang_icon_zhuangxiuzhaobiao.png in Resources */,
 				DE89FA5218F3BB3600831A4A /* zonghe_icon_hunqin.png in Resources */,
 				DE89FA4F18F3BB3600831A4A /* zonghe_icon_gongyin.png in Resources */,
 				DEDA12E118F01F3700276906 /* NewsDetailViewController.xib in Resources */,

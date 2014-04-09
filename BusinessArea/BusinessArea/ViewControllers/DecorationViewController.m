@@ -7,13 +7,18 @@
 //
 
 #import "DecorationViewController.h"
-#import "SynthesizeViewController.h"
+#import "NewsDetailViewController.h"
 
 @interface DecorationViewController ()
 
 @end
 
 @implementation DecorationViewController
+
+-(IBAction)rightButtonPressed:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,16 +52,13 @@
     //手势
     recognizer_right = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeFrom:)];
     [recognizer_right setDirection:(UISwipeGestureRecognizerDirectionRight)];
+    
     [self.view addGestureRecognizer:recognizer_right];
-}
-
-//手势控制
--(void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer
-{
-    if(recognizer.direction==UISwipeGestureRecognizerDirectionRight)
-    {
-        [self.navigationController popViewControllerAnimated:YES];
-    }
+    
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background_image.png"]]];
+    [title_view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background_image.png"]]];
+    
+    [self initializeButtonListView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,5 +67,58 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)initializeButtonListView
+{
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Decoration" ofType:@"plist"];
+    NSMutableArray *buttonList = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+    
+    int x = 0;
+    int y = 0;
+    
+    for (int i = 0; i < [buttonList count]; i++)
+    {
+        if (i % 4 == 0 && i != 0)
+        {
+            x = 0;
+            y++;
+        }
+        
+        NSString *key = [[[buttonList objectAtIndex:i] allKeys] objectAtIndex:0];
+        NSString *value = [[buttonList objectAtIndex:i] valueForKey:key];
+        UIButton *button = [[UIButton alloc] init];
+        
+        [decorationScrollView addSubview:button];
+        
+        [button setTag:i];
+        [button setTitle:key forState:UIControlStateNormal];
+        [button setFrame:CGRectMake(x * 80, y * 100, 80, 100)];
+        [button setImage:[UIImage imageNamed:value] forState:UIControlStateNormal];
+        [button setImageEdgeInsets:UIEdgeInsetsMake(5, 5, 25, 5)];
+        [button setTitleEdgeInsets:UIEdgeInsetsMake(80, -button.imageView.image.size.width, 0, 0)];
+        [button.titleLabel setFont:[UIFont systemFontOfSize: 13.0]];
+        [button addTarget:self action:@selector(showNewsDetailPage:) forControlEvents:UIControlEventTouchUpInside];
+        
+        x++;
+    }
+    
+    [decorationScrollView setContentSize:CGSizeMake(Screen_Width, (y + 1)* 100)];
+    [decorationScrollView setFrame:CGRectMake(0, title_view.frame.size.height, Screen_Width, Screen_Height - title_view.frame.size.height)];
+}
+
+-(void)showNewsDetailPage:(UIButton *)button
+{
+    NSLog(@"button tag : %d", button.tag);
+    NewsDetailViewController *next = [[NewsDetailViewController alloc] init];
+    [self.navigationController pushViewController:next animated:YES];
+}
+
+#pragma mark - 手势控制
+-(void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer
+{
+    if(recognizer.direction==UISwipeGestureRecognizerDirectionRight)
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
 
 @end

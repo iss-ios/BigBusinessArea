@@ -10,6 +10,9 @@
 
 @interface DecorationViewController : UIViewController
 {
+    IBOutlet UIView *title_view;
+    IBOutlet UIScrollView *decorationScrollView;
+    
     UISwipeGestureRecognizer *recognizer_right;
 }
 
