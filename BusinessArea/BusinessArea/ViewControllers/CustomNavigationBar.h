@@ -25,6 +25,8 @@
 
 @property (strong, nonatomic) UIView *backgroundView; //navigationBar的背景视图，默认为nil，注：当系统版本号为7.0及以上时，若设置此属性且statusBarView为nil时，statusBar的背景与navigationBar的背景一致;
 
+@property (strong, nonatomic) UIView *navBarView; //navigationBar的背景视图，默认为nil
+
 @property (strong, nonatomic) UIView *statusBarView; //注：只有当系统版本号为7.0及以上时才能设置，默认为nil;
 
 @property (strong, nonatomic) UIColor *statusBarColor; //注：只有当系统版本号为7.0及以上时才有效，默认与navigationBar的barTintColor一样;

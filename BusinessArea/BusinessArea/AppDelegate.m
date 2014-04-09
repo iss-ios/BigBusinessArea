@@ -30,12 +30,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[CustomWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     /*
      *加载主界面，左、中、右结构
      */
-    
     //菜单
     MenuViewController *menuController = [[MenuViewController alloc] init];
     //主页
@@ -59,7 +58,7 @@
     [self.window setRootViewController:appNavigation];
     [application setStatusBarHidden:NO];
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
-    
+    self.window.statusBarColor = [UIColor blackColor];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     

@@ -38,6 +38,7 @@
 @synthesize title;
 @synthesize barTintColor;
 @synthesize backgroundView;
+@synthesize navBarView;
 @synthesize statusBarView;
 @synthesize statusBarColor;
 @synthesize titleTextAttributes;
@@ -158,6 +159,13 @@
     bView.frame = backgroundView.frame;
     [backgroundView addSubview:bView];
     //    [self setNeedsDisplay];
+}
+-(void)setNavBarView:(UIView *)nView
+{
+    [self addNavigationBarView];
+    nView.frame = CGRectMake(0, 0, navigationBarView.frame.size.width, navigationBarView.frame.size.height);
+    [navigationBarView addSubview:nView];
+
 }
 - (void)setStatusBarView:(UIView *)sbView
 {

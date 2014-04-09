@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SWRevealViewController.h"
 #import "RootNavigationController.h"
+#import "CustomWindow.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,SWRevealViewControllerDelegate>
 {
@@ -16,7 +17,7 @@
     NSMutableArray *items;
     UIView *customToolBar;
 }
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) CustomWindow *window;
 @property (strong, nonatomic) UINavigationController *appNavigation;
 @property (strong, nonatomic) SWRevealViewController *swRevealController;
 

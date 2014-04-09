@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "UserInfoViewController.h"
 
 @interface MenuViewController ()
 
@@ -39,7 +40,8 @@
 #pragma mark button click
 - (IBAction)userButtonClicked:(id)sender
 {
-
+    UserInfoViewController *userInfo = [[UserInfoViewController alloc] init];
+    [self.navigationController pushViewController:userInfo animated:YES];
 }
 - (IBAction)helpButtonClicked:(id)sender
 {
