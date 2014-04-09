@@ -16,7 +16,7 @@
 
 @implementation SynthesizeViewController
 
--(IBAction)rightButtonPressed:(id)sender
+-(IBAction)leftButtonPressed:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -62,6 +62,9 @@
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background_image.png"]]];
     [title_view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background_image.png"]]];
     
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Synthesize" ofType:@"plist"];
+    buttonList = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+    
     [self initializeButtonListView];
 }
 
@@ -73,9 +76,6 @@
 
 -(void)initializeButtonListView
 {
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Synthesize" ofType:@"plist"];
-    NSMutableArray *buttonList = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
-    
     int x = 0;
     int y = 0;
     
@@ -111,9 +111,12 @@
 
 -(void)showNewsDetailPage:(UIButton *)button
 {
-    NSLog(@"button tag : %d", button.tag);
-    NewsDetailViewController *next = [[NewsDetailViewController alloc] init];
-    [self.navigationController pushViewController:next animated:YES];
+    if (buttonList.count != 0)
+    {
+        NewsDetailViewController *next = [[NewsDetailViewController alloc] init];
+        [next setNews_title:[[[buttonList objectAtIndex:button.tag] allKeys] objectAtIndex:0]];
+        [self.navigationController pushViewController:next animated:YES];
+    }
 }
 
 #pragma mark - 手势控制

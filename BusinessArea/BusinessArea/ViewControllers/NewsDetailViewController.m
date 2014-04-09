@@ -14,11 +14,12 @@
 
 @implementation NewsDetailViewController
 
--(IBAction)rightButtonPressed:(id)sender
+@synthesize news_title;
+
+-(IBAction)leftButtonPressed:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +34,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [title_label setText:news_title];
+    [title_view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"title_background.png"]]];
     
     [mWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.sina.com.cn/"]]];
 }

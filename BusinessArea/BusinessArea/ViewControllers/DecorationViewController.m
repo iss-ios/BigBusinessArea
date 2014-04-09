@@ -15,7 +15,7 @@
 
 @implementation DecorationViewController
 
--(IBAction)rightButtonPressed:(id)sender
+-(IBAction)leftButtonPressed:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -58,6 +58,9 @@
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background_image.png"]]];
     [title_view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background_image.png"]]];
     
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Decoration" ofType:@"plist"];
+    buttonList = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+    
     [self initializeButtonListView];
 }
 
@@ -69,9 +72,6 @@
 
 -(void)initializeButtonListView
 {
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Decoration" ofType:@"plist"];
-    NSMutableArray *buttonList = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
-    
     int x = 0;
     int y = 0;
     
@@ -102,14 +102,17 @@
     }
     
     [decorationScrollView setContentSize:CGSizeMake(Screen_Width, (y + 1)* 100)];
-    [decorationScrollView setFrame:CGRectMake(0, title_view.frame.size.height, Screen_Width, Screen_Height - title_view.frame.size.height)];
+    [decorationScrollView setFrame:CGRectMake(0, ad_button.frame.size.height + title_view.frame.size.height, Screen_Width, Screen_Height - title_view.frame.size.height)];
 }
 
 -(void)showNewsDetailPage:(UIButton *)button
 {
-    NSLog(@"button tag : %d", button.tag);
-    NewsDetailViewController *next = [[NewsDetailViewController alloc] init];
-    [self.navigationController pushViewController:next animated:YES];
+    if (buttonList.count != 0)
+    {
+        NewsDetailViewController *next = [[NewsDetailViewController alloc] init];
+        [next setNews_title:[[[buttonList objectAtIndex:button.tag] allKeys] objectAtIndex:0]];
+        [self.navigationController pushViewController:next animated:YES];
+    }
 }
 
 #pragma mark - 手势控制

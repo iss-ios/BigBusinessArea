@@ -11,5 +11,10 @@
 @interface NewsDetailViewController : UIViewController
 {
     IBOutlet UIWebView *mWebView;
+    IBOutlet UIView *title_view;
+    IBOutlet UILabel *title_label;
 }
+
+@property (nonatomic, copy) NSString *news_title;
+
 @end

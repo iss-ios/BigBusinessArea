@@ -10,6 +10,7 @@
 
 @interface SynthesizeViewController : UIViewController
 {
+    NSMutableArray *buttonList;
     IBOutlet UIView *title_view;
     IBOutlet UIScrollView *synthesizeScrollView;
     
