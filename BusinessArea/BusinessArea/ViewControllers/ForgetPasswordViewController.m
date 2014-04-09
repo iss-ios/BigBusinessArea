@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     //背景图片加圆角
     contentView.layer.cornerRadius = 5.0;
     contentView.layer.masksToBounds = YES;

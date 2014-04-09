@@ -61,14 +61,14 @@
         [passwordTextField checkInputIsEqualToString:rePasswordTextField.text tip:@"两次输入密码不一致"] &&
         [authCodeTextField checkInputIsEqualToString:@"1715" tip:@"验证码输入错误"]) {
         
-        ASIFormDataRequest *mRequest = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:Login_Url]];
+        ASIFormDataRequest *mRequest = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?username=%@&password=%@",Register_Url,emailTextField.text,passwordTextField.text]]];
         [mRequest setDelegate:self];
         [mRequest setRequestMethod:@"POST"];
         
         [mRequest setTimeOutSeconds:10.0];
         [mRequest setNumberOfTimesToRetryOnTimeout:1]; // 超时重试1次。
-        [mRequest setPostValue:emailTextField.text forKey:@"username"];
-        [mRequest setPostValue:passwordTextField.text forKey:@"password"];
+//        [mRequest setPostValue:emailTextField.text forKey:@"username"];
+//        [mRequest setPostValue:passwordTextField.text forKey:@"password"];
         [mRequest startAsynchronous];
     }
     

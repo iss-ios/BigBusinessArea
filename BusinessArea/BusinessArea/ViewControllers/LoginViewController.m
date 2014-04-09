@@ -50,15 +50,15 @@
 - (IBAction)loginButtonClicked:(id)sender
 {
     if (![emailTextField checkInputIsEmptyWithTip:@"用户名或邮箱不能为空"] && ![passwordTextField checkInputIsEmptyWithTip:@"密码不能为空"]) {
-        
-        ASIFormDataRequest *mRequest = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:Login_Url]];
+        //username=admin&password=qwe123
+        ASIFormDataRequest *mRequest = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?username=%@&password=%@",Login_Url,emailTextField.text,passwordTextField.text]]];
         [mRequest setDelegate:self];
-        [mRequest setRequestMethod:@"POST"];
+//        [mRequest setRequestMethod:@"POST"];
         
         [mRequest setTimeOutSeconds:10.0];
         [mRequest setNumberOfTimesToRetryOnTimeout:1]; // 超时重试1次。
-        [mRequest setPostValue:emailTextField.text forKey:@"username"];
-        [mRequest setPostValue:passwordTextField.text forKey:@"password"];
+//        [mRequest setPostValue:@"admin" forKey:@"username"];
+//        [mRequest setPostValue:@"qwe123" forKey:@"password"];
         [mRequest startAsynchronous];
     }
     
