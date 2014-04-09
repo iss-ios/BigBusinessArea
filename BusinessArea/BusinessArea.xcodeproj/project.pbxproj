@@ -99,6 +99,8 @@
 		023B546018F518BC00B5E045 /* qr_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 023B545F18F518BC00B5E045 /* qr_back.png */; };
 		023B546718F5205E00B5E045 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 023B546218F5205E00B5E045 /* MenuButton.m */; };
 		023B546918F5205E00B5E045 /* MenuViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 023B546618F5205E00B5E045 /* MenuViewGenerator.m */; };
+		023B546F18F5398B00B5E045 /* MyOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023B546D18F5398B00B5E045 /* MyOrdersViewController.m */; };
+		023B547018F5398B00B5E045 /* MyOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023B546E18F5398B00B5E045 /* MyOrdersViewController.xib */; };
 		02C7043A18F3C0E70063CC7B /* AdaptiveTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C7043718F3C0E70063CC7B /* AdaptiveTextField.m */; };
 		02C7043B18F3C0E70063CC7B /* TextFieldInputCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C7043918F3C0E70063CC7B /* TextFieldInputCheck.m */; };
 		02C7045618F3C24E0063CC7B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C7043E18F3C24E0063CC7B /* NSObject+SBJson.m */; };
@@ -311,6 +313,9 @@
 		023B546218F5205E00B5E045 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		023B546518F5205E00B5E045 /* MenuViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewGenerator.h; sourceTree = "<group>"; };
 		023B546618F5205E00B5E045 /* MenuViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewGenerator.m; sourceTree = "<group>"; };
+		023B546C18F5398B00B5E045 /* MyOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrdersViewController.h; sourceTree = "<group>"; };
+		023B546D18F5398B00B5E045 /* MyOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrdersViewController.m; sourceTree = "<group>"; };
+		023B546E18F5398B00B5E045 /* MyOrdersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrdersViewController.xib; sourceTree = "<group>"; };
 		02C7043218F3C0C40063CC7B /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		02C7043618F3C0E70063CC7B /* AdaptiveTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaptiveTextField.h; sourceTree = "<group>"; };
 		02C7043718F3C0E70063CC7B /* AdaptiveTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdaptiveTextField.m; sourceTree = "<group>"; };
@@ -673,6 +678,39 @@
 			name = User;
 			sourceTree = "<group>";
 		};
+		023B546A18F5395000B5E045 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				023B546118F5205E00B5E045 /* MenuButton.h */,
+				023B546218F5205E00B5E045 /* MenuButton.m */,
+				023B546518F5205E00B5E045 /* MenuViewGenerator.h */,
+				023B546618F5205E00B5E045 /* MenuViewGenerator.m */,
+				023B53E818F4DDD900B5E045 /* UserInfoViewController.h */,
+				023B53E918F4DDD900B5E045 /* UserInfoViewController.m */,
+				023B53EA18F4DDD900B5E045 /* UserInfoViewController.xib */,
+				023B546C18F5398B00B5E045 /* MyOrdersViewController.h */,
+				023B546D18F5398B00B5E045 /* MyOrdersViewController.m */,
+				023B546E18F5398B00B5E045 /* MyOrdersViewController.xib */,
+			);
+			name = UserInfo;
+			sourceTree = "<group>";
+		};
+		023B546B18F5396800B5E045 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0233D90A18EBEB8F00D18A5C /* RegisterViewController.h */,
+				0233D90B18EBEB8F00D18A5C /* RegisterViewController.m */,
+				0233D90C18EBEB8F00D18A5C /* RegisterViewController.xib */,
+				0233D90F18EBEB9F00D18A5C /* LoginViewController.h */,
+				0233D91018EBEB9F00D18A5C /* LoginViewController.m */,
+				0233D91118EBEB9F00D18A5C /* LoginViewController.xib */,
+				0233D91418EBEBF700D18A5C /* ForgetPasswordViewController.h */,
+				0233D91518EBEBF700D18A5C /* ForgetPasswordViewController.m */,
+				0233D91618EBEBF700D18A5C /* ForgetPasswordViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		02C7043C18F3C24E0063CC7B /* SBJSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -802,22 +840,8 @@
 		DEDA12C818EE9A3200276906 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				023B546118F5205E00B5E045 /* MenuButton.h */,
-				023B546218F5205E00B5E045 /* MenuButton.m */,
-				023B546518F5205E00B5E045 /* MenuViewGenerator.h */,
-				023B546618F5205E00B5E045 /* MenuViewGenerator.m */,
-				023B53E818F4DDD900B5E045 /* UserInfoViewController.h */,
-				023B53E918F4DDD900B5E045 /* UserInfoViewController.m */,
-				023B53EA18F4DDD900B5E045 /* UserInfoViewController.xib */,
-				0233D90A18EBEB8F00D18A5C /* RegisterViewController.h */,
-				0233D90B18EBEB8F00D18A5C /* RegisterViewController.m */,
-				0233D90C18EBEB8F00D18A5C /* RegisterViewController.xib */,
-				0233D90F18EBEB9F00D18A5C /* LoginViewController.h */,
-				0233D91018EBEB9F00D18A5C /* LoginViewController.m */,
-				0233D91118EBEB9F00D18A5C /* LoginViewController.xib */,
-				0233D91418EBEBF700D18A5C /* ForgetPasswordViewController.h */,
-				0233D91518EBEBF700D18A5C /* ForgetPasswordViewController.m */,
-				0233D91618EBEBF700D18A5C /* ForgetPasswordViewController.xib */,
+				023B546B18F5396800B5E045 /* Login */,
+				023B546A18F5395000B5E045 /* UserInfo */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -957,6 +981,7 @@
 				DE89FA4918F3BB3600831A4A /* zonghe_icon_binguan.png in Resources */,
 				0233D8C318EBA1A900D18A5C /* blackArrow.png in Resources */,
 				DE89FA5F18F3BB3600831A4A /* zonghe_icon_yiliaobaojian.png in Resources */,
+				023B547018F5398B00B5E045 /* MyOrdersViewController.xib in Resources */,
 				023B545E18F517AB00B5E045 /* user_banner_bg.png in Resources */,
 				DE89FA5718F3BB3600831A4A /* zonghe_icon_lvyou.png in Resources */,
 				0233D91318EBEB9F00D18A5C /* LoginViewController.xib in Resources */,
@@ -1071,6 +1096,7 @@
 				0202FA9518EE5687001D277E /* UIView+CustomStatusBar.m in Sources */,
 				02C7045F18F3C24E0063CC7B /* SBJsonTokeniser.m in Sources */,
 				0233D8CE18EBA1A900D18A5C /* NSData+GIF.m in Sources */,
+				023B546F18F5398B00B5E045 /* MyOrdersViewController.m in Sources */,
 				0233D84D18EB9EDB00D18A5C /* main.m in Sources */,
 				02C7045618F3C24E0063CC7B /* NSObject+SBJson.m in Sources */,
 				0233D8D418EBA1A900D18A5C /* SDWebImageManager.m in Sources */,

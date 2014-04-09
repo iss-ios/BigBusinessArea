@@ -52,7 +52,6 @@
 - (IBAction)rightButtonClicked:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
-
 }
 
 @end
