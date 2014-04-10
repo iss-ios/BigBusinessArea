@@ -96,12 +96,21 @@
     [radio_button setButtonWithArray:array];
     [radio_button setRadioButtonStatus:0];
     
-    NSLog(@"responseString : %@",request.responseString);
-    if ([[request.responseString JSONValue] isKindOfClass:[NSDictionary class]])
-    {
-        NSDictionary *dic = [request.responseString JSONValue];
-        NSLog(@"dic : %@", dic);
-    }
+//    NSString *result = [request.responseString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+//    result = [result stringByReplacingOccurrencesOfString:@" " withString:@""];
+//    result = [result stringByReplacingOccurrencesOfString:@"　" withString:@""];
+//    result = [result stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+//    result = [result stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    
+    NSError *error;
+    NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:request.responseData options:NSJSONReadingMutableLeaves error:&error];
+    NSLog(@"resultDic : %@", resultDic);
+    
+//    if ([[result JSONValue] isKindOfClass:[NSDictionary class]])
+//    {
+//        NSDictionary *dic = [request.responseString JSONValue];
+//        NSLog(@"dic : %@", dic);
+//    }
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
