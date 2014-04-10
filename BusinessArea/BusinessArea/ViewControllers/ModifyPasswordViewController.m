@@ -1,20 +1,19 @@
 //
-//  MyOrdersViewController.m
+//  ModifyPasswordViewController.m
 //  BusinessArea
 //
-//  Created by iss on 14-4-9.
+//  Created by iss on 14-4-10.
 //  Copyright (c) 2014年 youyan. All rights reserved.
 //
 
-#import "MyOrdersViewController.h"
+#import "ModifyPasswordViewController.h"
 
-@interface MyOrdersViewController ()
+@interface ModifyPasswordViewController ()
 
 @end
 
-@implementation MyOrdersViewController
-#pragma mark - 
-#pragma mark view
+@implementation ModifyPasswordViewController
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self showNavigationBarWithTitle:@"我的订单" leftButton:backButton rightButton:nil];
+    [self showNavigationBarWithTitle:@"修改密码" leftButton:backButton rightButton:nil];
     [self navigationBar].statusBarColor = [UIColor blackColor];
     [self navigationBar].navBarView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:Nav_Bar_Back_Image]];
 }
@@ -43,4 +42,5 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 @end

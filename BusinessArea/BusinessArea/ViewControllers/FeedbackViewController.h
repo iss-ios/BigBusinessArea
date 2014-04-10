@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FeedbackViewController : UIViewController
-
+{
+    IBOutlet UIButton *backButton;
+}
 @end

@@ -103,6 +103,22 @@
 		023B547018F5398B00B5E045 /* MyOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023B546E18F5398B00B5E045 /* MyOrdersViewController.xib */; };
 		023B547418F53E2500B5E045 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023B547218F53E2500B5E045 /* FeedbackViewController.m */; };
 		023B547518F53E2500B5E045 /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023B547318F53E2500B5E045 /* FeedbackViewController.xib */; };
+		0271635B18F62D8F00B640BA /* MyNoticesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271635918F62D8F00B640BA /* MyNoticesViewController.m */; };
+		0271635C18F62D8F00B640BA /* MyNoticesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0271635A18F62D8F00B640BA /* MyNoticesViewController.xib */; };
+		0271636518F6302800B640BA /* background_house.png in Resources */ = {isa = PBXBuildFile; fileRef = 0271635D18F6302800B640BA /* background_house.png */; };
+		0271636618F6302800B640BA /* background_marray.png in Resources */ = {isa = PBXBuildFile; fileRef = 0271635E18F6302800B640BA /* background_marray.png */; };
+		0271636718F6302800B640BA /* background_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0271635F18F6302800B640BA /* background_normal.png */; };
+		0271636818F6302800B640BA /* background_useditems.png in Resources */ = {isa = PBXBuildFile; fileRef = 0271636018F6302800B640BA /* background_useditems.png */; };
+		0271636918F6302800B640BA /* user_my_info_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0271636118F6302800B640BA /* user_my_info_bg.png */; };
+		0271636A18F6302800B640BA /* user_my_msgcenter_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0271636218F6302800B640BA /* user_my_msgcenter_bg.png */; };
+		0271636B18F6302800B640BA /* user_my_order_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0271636318F6302800B640BA /* user_my_order_bg.png */; };
+		0271636C18F6302800B640BA /* user_my_publish_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0271636418F6302800B640BA /* user_my_publish_bg.png */; };
+		0271637018F6333C00B640BA /* InfoCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271636E18F6333C00B640BA /* InfoCenterViewController.m */; };
+		0271637118F6333C00B640BA /* InfoCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0271636F18F6333C00B640BA /* InfoCenterViewController.xib */; };
+		0271637518F633A000B640BA /* ModifyUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271637318F633A000B640BA /* ModifyUserInfoViewController.m */; };
+		0271637618F633A000B640BA /* ModifyUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0271637418F633A000B640BA /* ModifyUserInfoViewController.xib */; };
+		0271637A18F6342E00B640BA /* ModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271637818F6342E00B640BA /* ModifyPasswordViewController.m */; };
+		0271637B18F6342E00B640BA /* ModifyPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0271637918F6342E00B640BA /* ModifyPasswordViewController.xib */; };
 		02C7043A18F3C0E70063CC7B /* AdaptiveTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C7043718F3C0E70063CC7B /* AdaptiveTextField.m */; };
 		02C7043B18F3C0E70063CC7B /* TextFieldInputCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C7043918F3C0E70063CC7B /* TextFieldInputCheck.m */; };
 		02C7045618F3C24E0063CC7B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C7043E18F3C24E0063CC7B /* NSObject+SBJson.m */; };
@@ -321,6 +337,26 @@
 		023B547118F53E2500B5E045 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		023B547218F53E2500B5E045 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		023B547318F53E2500B5E045 /* FeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
+		0271635818F62D8F00B640BA /* MyNoticesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNoticesViewController.h; sourceTree = "<group>"; };
+		0271635918F62D8F00B640BA /* MyNoticesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNoticesViewController.m; sourceTree = "<group>"; };
+		0271635A18F62D8F00B640BA /* MyNoticesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyNoticesViewController.xib; sourceTree = "<group>"; };
+		0271635D18F6302800B640BA /* background_house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_house.png; sourceTree = "<group>"; };
+		0271635E18F6302800B640BA /* background_marray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_marray.png; sourceTree = "<group>"; };
+		0271635F18F6302800B640BA /* background_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_normal.png; sourceTree = "<group>"; };
+		0271636018F6302800B640BA /* background_useditems.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_useditems.png; sourceTree = "<group>"; };
+		0271636118F6302800B640BA /* user_my_info_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_my_info_bg.png; sourceTree = "<group>"; };
+		0271636218F6302800B640BA /* user_my_msgcenter_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_my_msgcenter_bg.png; sourceTree = "<group>"; };
+		0271636318F6302800B640BA /* user_my_order_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_my_order_bg.png; sourceTree = "<group>"; };
+		0271636418F6302800B640BA /* user_my_publish_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_my_publish_bg.png; sourceTree = "<group>"; };
+		0271636D18F6333C00B640BA /* InfoCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCenterViewController.h; sourceTree = "<group>"; };
+		0271636E18F6333C00B640BA /* InfoCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCenterViewController.m; sourceTree = "<group>"; };
+		0271636F18F6333C00B640BA /* InfoCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoCenterViewController.xib; sourceTree = "<group>"; };
+		0271637218F633A000B640BA /* ModifyUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyUserInfoViewController.h; sourceTree = "<group>"; };
+		0271637318F633A000B640BA /* ModifyUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyUserInfoViewController.m; sourceTree = "<group>"; };
+		0271637418F633A000B640BA /* ModifyUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModifyUserInfoViewController.xib; sourceTree = "<group>"; };
+		0271637718F6342E00B640BA /* ModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordViewController.h; sourceTree = "<group>"; };
+		0271637818F6342E00B640BA /* ModifyPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordViewController.m; sourceTree = "<group>"; };
+		0271637918F6342E00B640BA /* ModifyPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModifyPasswordViewController.xib; sourceTree = "<group>"; };
 		02C7043218F3C0C40063CC7B /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		02C7043618F3C0E70063CC7B /* AdaptiveTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaptiveTextField.h; sourceTree = "<group>"; };
 		02C7043718F3C0E70063CC7B /* AdaptiveTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdaptiveTextField.m; sourceTree = "<group>"; };
@@ -665,6 +701,14 @@
 		023B543E18F5100F00B5E045 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				0271635D18F6302800B640BA /* background_house.png */,
+				0271635E18F6302800B640BA /* background_marray.png */,
+				0271635F18F6302800B640BA /* background_normal.png */,
+				0271636018F6302800B640BA /* background_useditems.png */,
+				0271636118F6302800B640BA /* user_my_info_bg.png */,
+				0271636218F6302800B640BA /* user_my_msgcenter_bg.png */,
+				0271636318F6302800B640BA /* user_my_order_bg.png */,
+				0271636418F6302800B640BA /* user_my_publish_bg.png */,
 				023B545718F5140800B5E045 /* oper_title2.png */,
 				023B545918F5142500B5E045 /* user_btn_bg.png */,
 				023B544518F5130600B5E045 /* user_exit.png */,
@@ -696,6 +740,18 @@
 				023B546C18F5398B00B5E045 /* MyOrdersViewController.h */,
 				023B546D18F5398B00B5E045 /* MyOrdersViewController.m */,
 				023B546E18F5398B00B5E045 /* MyOrdersViewController.xib */,
+				0271635818F62D8F00B640BA /* MyNoticesViewController.h */,
+				0271635918F62D8F00B640BA /* MyNoticesViewController.m */,
+				0271635A18F62D8F00B640BA /* MyNoticesViewController.xib */,
+				0271636D18F6333C00B640BA /* InfoCenterViewController.h */,
+				0271636E18F6333C00B640BA /* InfoCenterViewController.m */,
+				0271636F18F6333C00B640BA /* InfoCenterViewController.xib */,
+				0271637218F633A000B640BA /* ModifyUserInfoViewController.h */,
+				0271637318F633A000B640BA /* ModifyUserInfoViewController.m */,
+				0271637418F633A000B640BA /* ModifyUserInfoViewController.xib */,
+				0271637718F6342E00B640BA /* ModifyPasswordViewController.h */,
+				0271637818F6342E00B640BA /* ModifyPasswordViewController.m */,
+				0271637918F6342E00B640BA /* ModifyPasswordViewController.xib */,
 				023B547118F53E2500B5E045 /* FeedbackViewController.h */,
 				023B547218F53E2500B5E045 /* FeedbackViewController.m */,
 				023B547318F53E2500B5E045 /* FeedbackViewController.xib */,
@@ -974,16 +1030,19 @@
 			files = (
 				DE89FA6118F3BB3600831A4A /* zonghe_icon_yinyueqicai.png in Resources */,
 				0233D8C618EBA1A900D18A5C /* blueArrow@2x.png in Resources */,
+				0271636518F6302800B640BA /* background_house.png in Resources */,
 				0233D84B18EB9EDB00D18A5C /* InfoPlist.strings in Resources */,
 				DE89FA5818F3BB3600831A4A /* zonghe_icon_meifa.png in Resources */,
 				DE89FA2918F3B21C00831A4A /* right_button.png in Resources */,
 				023B546018F518BC00B5E045 /* qr_back.png in Resources */,
+				0271637118F6333C00B640BA /* InfoCenterViewController.xib in Resources */,
 				0233D8CA18EBA1A900D18A5C /* whiteArrow@2x.png in Resources */,
 				DE89FA5E18F3BB3600831A4A /* zonghe_icon_xiuxianyule.png in Resources */,
 				023B545418F5130600B5E045 /* user_update.png in Resources */,
 				023B545A18F5142600B5E045 /* user_btn_bg.png in Resources */,
 				0233D91818EBEBF700D18A5C /* ForgetPasswordViewController.xib in Resources */,
 				DE89FA6018F3BB3600831A4A /* zonghe_icon_yingshiwenhua.png in Resources */,
+				0271636918F6302800B640BA /* user_my_info_bg.png in Resources */,
 				023B53EC18F4DDD900B5E045 /* UserInfoViewController.xib in Resources */,
 				023B545C18F5174300B5E045 /* dsq_logo_name.png in Resources */,
 				DE89FA4918F3BB3600831A4A /* zonghe_icon_binguan.png in Resources */,
@@ -1002,10 +1061,14 @@
 				023B544D18F5130600B5E045 /* user_exit.png in Resources */,
 				023B545218F5130600B5E045 /* user_normalinfo.png in Resources */,
 				0233D8C518EBA1A900D18A5C /* blueArrow.png in Resources */,
+				0271637618F633A000B640BA /* ModifyUserInfoViewController.xib in Resources */,
 				023B543D18F4F5CC00B5E045 /* toolbar_forward_icon.png in Resources */,
+				0271636618F6302800B640BA /* background_marray.png in Resources */,
 				023B543518F4F25200B5E045 /* logo_navi_tel.png in Resources */,
+				0271636818F6302800B640BA /* background_useditems.png in Resources */,
 				DE89FA5A18F3BB3600831A4A /* zonghe_icon_shumatongxin.png in Resources */,
 				DEDA131318F0673000276906 /* SynthesizeViewController.xib in Resources */,
+				0271636B18F6302800B640BA /* user_my_order_bg.png in Resources */,
 				DE89FA5618F3BB3600831A4A /* zonghe_icon_luntan.png in Resources */,
 				DE89FA5418F3BB3600831A4A /* zonghe_icon_jiaoyupeixun.png in Resources */,
 				0233D8C418EBA1A900D18A5C /* blackArrow@2x.png in Resources */,
@@ -1023,7 +1086,9 @@
 				DE89FA5C18F3BB3600831A4A /* zonghe_icon_touzilicai.png in Resources */,
 				DE89FA5018F3BB3600831A4A /* zonghe_icon_goumai.png in Resources */,
 				DE89FA4618F3BB3600831A4A /* zonghe_icon_auto.png in Resources */,
+				0271636C18F6302800B640BA /* user_my_publish_bg.png in Resources */,
 				0233D8C718EBA1A900D18A5C /* grayArrow.png in Resources */,
+				0271636A18F6302800B640BA /* user_my_msgcenter_bg.png in Resources */,
 				023B544018F5101D00B5E045 /* user_sendinfo.png in Resources */,
 				023B544418F511C100B5E045 /* user_my_order.png in Resources */,
 				DE89FA4C18F3BB3600831A4A /* zonghe_icon_fangchan.png in Resources */,
@@ -1033,8 +1098,11 @@
 				023B544F18F5130600B5E045 /* user_message.png in Resources */,
 				DE89FA5118F3BB3600831A4A /* zonghe_icon_huangjin.png in Resources */,
 				DE89FA4E18F3BB3600831A4A /* zonghe_icon_fushi.png in Resources */,
+				0271637B18F6342E00B640BA /* ModifyPasswordViewController.xib in Resources */,
 				023B545118F5130600B5E045 /* user_my_publish.png in Resources */,
+				0271636718F6302800B640BA /* background_normal.png in Resources */,
 				023B545018F5130600B5E045 /* user_mofify_pw.png in Resources */,
+				0271635C18F62D8F00B640BA /* MyNoticesViewController.xib in Resources */,
 				DE89FA4D18F3BB3600831A4A /* zonghe_icon_fangchanloushi.png in Resources */,
 				DE89FA4A18F3BB3600831A4A /* zonghe_icon_bycicle.png in Resources */,
 				DE89FA5318F3BB3600831A4A /* zonghe_icon_jiafang.png in Resources */,
@@ -1067,6 +1135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02C7045E18F3C24E0063CC7B /* SBJsonStreamWriterState.m in Sources */,
+				0271637018F6333C00B640BA /* InfoCenterViewController.m in Sources */,
 				02C7046118F3C24E0063CC7B /* SBJsonWriter.m in Sources */,
 				02C7045A18F3C24E0063CC7B /* SBJsonStreamParserAdapter.m in Sources */,
 				0233D8DC18EBA1A900D18A5C /* Toast+UIView.m in Sources */,
@@ -1076,6 +1145,7 @@
 				0233D8D918EBA1A900D18A5C /* UIImage+WebP.m in Sources */,
 				02C7045718F3C24E0063CC7B /* SBJsonParser.m in Sources */,
 				DEDA131618F07CDA00276906 /* SWRevealViewController.m in Sources */,
+				0271637518F633A000B640BA /* ModifyUserInfoViewController.m in Sources */,
 				0233D8BF18EBA1A900D18A5C /* ASIHTTPRequest.m in Sources */,
 				0233D91E18EBF56A00D18A5C /* CustomNavigationBar.m in Sources */,
 				0233D8CB18EBA1A900D18A5C /* EGORefreshTableFooterView.m in Sources */,
@@ -1098,6 +1168,7 @@
 				0233D8CF18EBA1A900D18A5C /* SDImageCache.m in Sources */,
 				0233D8BD18EBA1A900D18A5C /* ASIDownloadCache.m in Sources */,
 				0233D8C018EBA1A900D18A5C /* ASIInputStream.m in Sources */,
+				0271635B18F62D8F00B640BA /* MyNoticesViewController.m in Sources */,
 				0233D8BB18EBA1A900D18A5C /* ASIDataCompressor.m in Sources */,
 				0233D8D018EBA1A900D18A5C /* SDWebImageCompat.m in Sources */,
 				0233D90618EBB07700D18A5C /* RootNavigationController.m in Sources */,
@@ -1111,6 +1182,7 @@
 				02C7045618F3C24E0063CC7B /* NSObject+SBJson.m in Sources */,
 				0233D8D418EBA1A900D18A5C /* SDWebImageManager.m in Sources */,
 				0233D90918EBB16100D18A5C /* RootToolBarItem.m in Sources */,
+				0271637A18F6342E00B640BA /* ModifyPasswordViewController.m in Sources */,
 				0233D91718EBEBF700D18A5C /* ForgetPasswordViewController.m in Sources */,
 				0233D8E618EBA2E800D18A5C /* MenuViewController.m in Sources */,
 				0233D8D218EBA1A900D18A5C /* SDWebImageDownloader.m in Sources */,

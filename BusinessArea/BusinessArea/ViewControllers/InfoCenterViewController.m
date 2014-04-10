@@ -1,19 +1,19 @@
 //
-//  MyOrdersViewController.m
+//  InfoCenterViewController.m
 //  BusinessArea
 //
-//  Created by iss on 14-4-9.
+//  Created by iss on 14-4-10.
 //  Copyright (c) 2014年 youyan. All rights reserved.
 //
 
-#import "MyOrdersViewController.h"
+#import "InfoCenterViewController.h"
 
-@interface MyOrdersViewController ()
+@interface InfoCenterViewController ()
 
 @end
 
-@implementation MyOrdersViewController
-#pragma mark - 
+@implementation InfoCenterViewController
+#pragma mark -
 #pragma mark view
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self showNavigationBarWithTitle:@"我的订单" leftButton:backButton rightButton:nil];
+    [self showNavigationBarWithTitle:@"通知" leftButton:backButton rightButton:nil];
     [self navigationBar].statusBarColor = [UIColor blackColor];
     [self navigationBar].navBarView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:Nav_Bar_Back_Image]];
 }

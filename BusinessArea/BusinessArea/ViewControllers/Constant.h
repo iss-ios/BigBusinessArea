@@ -40,3 +40,16 @@
 #define FinishDownloadImage @"FinishDownloadImage"
 #define FinishedImage       @"FinishedImage"
 
+//navigationBar背景图片
+#define Nav_Bar_Back_Image  @"user_banner_bg.png"
+
+//是否登录key
+#define Logined_Key          @"logined_key"
+
+//用户登录通知
+#define Notification_Logined_Key @"user_logined_key"
+//用户登出通知
+#define Notification_Logouted_Key @"user_logouted_key"
+
+//用户账号key
+#define User_Account_Key     @"user_account_key"

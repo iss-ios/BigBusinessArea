@@ -14,6 +14,7 @@
 #import "RootNavigationController.h"
 #import "RootToolBarItem.h"
 #import "LoginViewController.h"
+#import "UserInfoViewController.h"
 
 #define ToolBar_Height 49.0
 #define ToolBarItemNorImage(i) [NSString stringWithFormat:@"tool_nor_%i.png",i]
@@ -173,11 +174,17 @@
             break;
         case 3:
         {
-            
-            //会员
-            LoginViewController *login = [[LoginViewController alloc] init];
-            [swRevealController.navigationController pushViewController:login animated:YES];
-            
+             //会员
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            BOOL logined = [defaults boolForKey:Logined_Key];
+            if (logined) {
+                UserInfoViewController *userInfo = [[UserInfoViewController alloc] init];
+                [swRevealController.navigationController pushViewController:userInfo animated:YES];
+            }
+            else{
+                LoginViewController *login = [[LoginViewController alloc] init];
+                [swRevealController.navigationController pushViewController:login animated:YES];
+            }
         }
             
             break;

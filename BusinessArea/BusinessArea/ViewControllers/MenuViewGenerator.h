@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewGenerator : UIView
+@interface MenuViewGenerator : UIView<UIAlertViewDelegate>
 {
     UIViewController *activeController_;
 }

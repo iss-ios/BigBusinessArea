@@ -7,9 +7,14 @@
 //
 
 #import "MenuViewGenerator.h"
-
 #import "MenuButton.h"
-
+#import "MyOrdersViewController.h"
+#import "MyNoticesViewController.h"
+#import "InfoCenterViewController.h"
+#import "ModifyUserInfoViewController.h"
+#import "ModifyPasswordViewController.h"
+#import "FeedbackViewController.h"
+#import "LoginViewController.h"
 
 
 @implementation MenuViewGenerator
@@ -47,6 +52,13 @@
 //主界面按钮点击事件
 -(void)buttonClicked:(UIButton *)sender
 {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL logined = [defaults boolForKey:Logined_Key];
+    if (!logined) {
+        LoginViewController *login = [[LoginViewController alloc] init];
+        [activeController_.navigationController pushViewController:login animated:YES];
+        return;
+    }
     int btag = [sender tag];
     switch (btag) {
         case 0:
@@ -56,33 +68,41 @@
             break;
         case 1:
         {
+            MyNoticesViewController *myNotices = [[MyNoticesViewController alloc] init];
+            [activeController_.navigationController pushViewController:myNotices animated:YES];
 
         }
             break;
         case 2:
         {
-            
+            MyOrdersViewController *myOrders = [[MyOrdersViewController alloc] init];
+            [activeController_.navigationController pushViewController:myOrders animated:YES];
         }
             break;
         case 3:
         {
+            ModifyUserInfoViewController *modifyUserInfo = [[ModifyUserInfoViewController alloc] init];
+            [activeController_.navigationController pushViewController:modifyUserInfo animated:YES];
             
         }
             break;
         case 4:
         {
-            
+            ModifyPasswordViewController *modifyPassword = [[ModifyPasswordViewController alloc] init];
+            [activeController_.navigationController pushViewController:modifyPassword animated:YES];
         }
             break;
         case 5:
         {
-            
+            InfoCenterViewController *infoCenter = [[InfoCenterViewController alloc] init];
+            [activeController_.navigationController pushViewController:infoCenter animated:YES];
             
         }
             break;
         case 6:
         {
-            
+            FeedbackViewController *feedback = [[FeedbackViewController alloc] init];
+            [activeController_.navigationController pushViewController:feedback animated:YES];
         }
             break;
         case 7:
@@ -92,6 +112,8 @@
             break;
         case 8:
         {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"是否要退出当前登录账户" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",@"取消", nil];
+            [alert show];
             
         }
             break;
@@ -101,5 +123,13 @@
     }
     
 }
-
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setBool:NO forKey:Logined_Key];
+        [defaults synchronize];
+        [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Logouted_Key object:self userInfo:nil];
+    }
+}
 @end

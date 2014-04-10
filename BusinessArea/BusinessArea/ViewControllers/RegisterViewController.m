@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
     [self showNavigationBarWithTitle:@"注册" leftButton:backButton rightButton:nil];
-    [self navigationBar].barTintColor = [UIColor colorWithRed:0 green:108/255.0 blue:200/255.0 alpha:1];
+    [self navigationBar].navBarView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:Nav_Bar_Back_Image]];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     

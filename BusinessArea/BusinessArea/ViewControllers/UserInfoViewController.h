@@ -12,5 +12,7 @@
 {
     IBOutlet UIView *navBarBackView;
     IBOutlet UIButton *rightButton;
+    IBOutlet UILabel *userNameLabel;
+    IBOutlet UILabel *userAccountLabel;
 }
 @end

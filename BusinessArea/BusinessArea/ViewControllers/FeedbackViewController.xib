@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackViewController">
             <connections>
+                <outlet property="backButton" destination="nfp-vf-ySF" id="lHr-I5-KMD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -80,6 +81,9 @@
             <state key="normal" image="back_btn_nor">
                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
             </state>
+            <connections>
+                <action selector="backButtonClicked:" destination="-1" eventType="touchUpInside" id="cLY-3E-Qhf"/>
+            </connections>
         </button>
     </objects>
     <resources>

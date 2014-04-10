@@ -4,9 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOrdersViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyNoticesViewController">
             <connections>
-                <outlet property="backButton" destination="HRZ-mc-Fa3" id="L4m-eE-kfu"/>
+                <outlet property="backButton" destination="cg9-28-RPv" id="gWV-3l-zzE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user_my_order_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lr2-Je-c2C">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user_my_publish_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="DWA-kr-gJn">
                     <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
@@ -25,19 +25,19 @@
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HRZ-mc-Fa3" userLabel="Button - back">
+        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cg9-28-RPv" userLabel="Button - back">
             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <state key="normal" image="back_btn_nor">
                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
             </state>
             <connections>
-                <action selector="backButtonClicked:" destination="-1" eventType="touchUpInside" id="ON5-cr-9HH"/>
+                <action selector="backButtonClicked:" destination="-1" eventType="touchUpInside" id="BoL-2l-qhR"/>
             </connections>
         </button>
     </objects>
     <resources>
         <image name="back_btn_nor" width="48" height="48"/>
-        <image name="user_my_order_bg.png" width="720" height="1180"/>
+        <image name="user_my_publish_bg.png" width="720" height="1180"/>
     </resources>
 </document>

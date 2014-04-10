@@ -32,6 +32,8 @@
     [self showNavigationBarWithTitle:nil leftButton:nil rightButton:rightButton];
     [self navigationBar].statusBarColor = [UIColor blackColor];
     [self navigationBar].navBarView = navBarBackView;
+   
+    [self updateUserInfo:nil];
     
     //加载主界面
     MenuViewGenerator *generator = [[MenuViewGenerator alloc] initWithFrame:CGRectMake(0, 160, 320, 106*3)
@@ -40,6 +42,8 @@
                                                                     activeController:self];
     [self.view addSubview:generator];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUserInfo:) name:Notification_Logined_Key object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUserInfo:) name:Notification_Logouted_Key object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,5 +57,19 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
-
+- (void)updateUserInfo:(NSNotification *)notification
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL logined = [defaults boolForKey:Logined_Key];
+    if (logined) {
+        NSString *account = [defaults valueForKey:User_Account_Key];
+        userNameLabel.text = account;
+        userAccountLabel.text = [NSString stringWithFormat:@"我的账户:%@",account];
+    }
+    else{
+        userNameLabel.text = @"游客";
+        userAccountLabel.text = @"账号未登录";
+    }
+    
+}
 @end

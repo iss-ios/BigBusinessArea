@@ -35,7 +35,7 @@
     contentView.layer.masksToBounds = YES;
     
     [self showNavigationBarWithTitle:@"登录" leftButton:backButton rightButton:nil];
-    [self navigationBar].barTintColor = [UIColor colorWithRed:0 green:108/255.0 blue:200/255.0 alpha:1];
+    [self navigationBar].navBarView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:Nav_Bar_Back_Image]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -92,9 +92,17 @@
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
     NSLog(@"%@",request.responseString);
+    
     if ([[request.responseString JSONValue] isKindOfClass:[NSDictionary class]]) {
         NSDictionary *dic = [request.responseString JSONValue];
         NSString *status = [dic objectForKey:@"status"];
+        
+        BOOL logined = NO;
+        NSString *account = nil;
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setBool:logined forKey:Logined_Key];
+        [defaults synchronize];
         
         switch ([status intValue]) {
             case 0:
@@ -105,6 +113,14 @@
                 break;
             case 1:
             {
+                logined = YES;
+                account = emailTextField.text;
+                
+                [defaults setBool:logined forKey:Logined_Key];
+                [defaults setValue:account forKey:User_Account_Key];
+                [defaults synchronize];
+                
+                [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Logined_Key object:self];
                 [[UIApplication sharedApplication].keyWindow makeToast:@"登录成功" duration:2.0 position:@"bottom"];
                 [self.navigationController popViewControllerAnimated:YES];
             }
@@ -118,7 +134,9 @@
             default:
                 break;
         }
+        
     }
+   
     
 }
 - (void)requestFailed:(ASIHTTPRequest *)request
