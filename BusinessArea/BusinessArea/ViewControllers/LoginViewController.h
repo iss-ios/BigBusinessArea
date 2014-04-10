@@ -15,5 +15,6 @@
     IBOutlet AdaptiveTextField *passwordTextField;
     IBOutlet UIImageView *backgroudImgView;
     IBOutlet UIButton    *backButton;
+    ASIFormDataRequest   *dataRequest;
 }
 @end

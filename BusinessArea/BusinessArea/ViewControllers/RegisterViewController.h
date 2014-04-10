@@ -17,6 +17,8 @@
     IBOutlet AdaptiveTextField *authCodeTextField;
     
     IBOutlet UIButton *backButton;
+    
+    ASIFormDataRequest   *dataRequest;
 }
 
 @end

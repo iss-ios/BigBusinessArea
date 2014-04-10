@@ -51,15 +51,15 @@
 {
     if (![emailTextField checkInputIsEmptyWithTip:@"用户名或邮箱不能为空"] && ![passwordTextField checkInputIsEmptyWithTip:@"密码不能为空"]) {
         //username=admin&password=qwe123
-        ASIFormDataRequest *mRequest = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?username=%@&password=%@",Login_Url,emailTextField.text,passwordTextField.text]]];
-        [mRequest setDelegate:self];
+        dataRequest = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?username=%@&password=%@",Login_Url,emailTextField.text,passwordTextField.text]]];
+        [dataRequest setDelegate:self];
 //        [mRequest setRequestMethod:@"POST"];
         
-        [mRequest setTimeOutSeconds:10.0];
-        [mRequest setNumberOfTimesToRetryOnTimeout:1]; // 超时重试1次。
+        [dataRequest setTimeOutSeconds:10.0];
+        [dataRequest setNumberOfTimesToRetryOnTimeout:1]; // 超时重试1次。
 //        [mRequest setPostValue:@"admin" forKey:@"username"];
 //        [mRequest setPostValue:@"qwe123" forKey:@"password"];
-        [mRequest startAsynchronous];
+        [dataRequest startAsynchronous];
     }
     
     
@@ -76,6 +76,7 @@
 }
 - (IBAction)backButtonClicked:(id)sender
 {
+    [dataRequest clearDelegatesAndCancel];
     [self.navigationController popViewControllerAnimated:YES];
 }
 #pragma mark -

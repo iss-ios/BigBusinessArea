@@ -13,5 +13,7 @@
     IBOutlet UIView *contentView;
     IBOutlet AdaptiveTextField *phoneTextField;
     IBOutlet UIButton *backButton;
+    
+    ASIFormDataRequest   *dataRequest;
 }
 @end
